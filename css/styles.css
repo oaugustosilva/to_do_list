@@ -1,0 +1,25 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    padding: 5px;
+    margin: 5px;
+    box-sizing: border-box;
+    background-color: #f1ecd4;
+    color: #313131;
+}
+
+/* Variables */
+:root {
+    --main-bgcolor: #ebebeb;
+    --check-box-color: rgb(0, 0, 0);
+    --main-text-color: rgb(77, 77, 77);
+    --border-color: #999;
+    --bio-bg-color: #252c4f;
+    --bio-border-color: #293544;
+    --circle: #565555;
+}
+
+#itemList li {
+    list-style: none;
+    padding: 5px;
+    /* Outros estilos personalizados */
+}

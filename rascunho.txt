@@ -1,0 +1,117 @@
+
+
+/*** custom checkboxes ***/
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
+
+input[type=checkbox] {
+    display: none;
+}
+
+/* to hide the checkbox itself */
+input[type=checkbox]+label:before {
+    font-family: FontAwesome;
+    display: inline-block;
+}
+
+input[type=checkbox]+label:before {
+    content: "\f1db";
+}
+
+/* unchecked icon */
+
+input[type=checkbox]+label:before {
+    letter-spacing: 7px;
+}
+
+/* space between checkbox and label */
+
+input[type=checkbox]:checked+label:before {
+    content: "\f058";
+    color: var(--check-box-color);
+}
+
+/* checked icon */
+
+input[type=checkbox]:checked+label:before {
+    letter-spacing: 7px;
+}
+
+
+
+
+
+
+function addItemToList() {
+    var textInput = document.getElementById("textInput");
+    var itemList = document.getElementById("itemList");
+    
+    // Criação do novo item
+    var newItem = document.createElement("li");
+    
+    // Criação do checkbox
+    var checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.id = "myCheckbox";
+    checkbox.className = "check_box";
+
+    // Criação da label do checkbox
+    var labelCheckbox = document.createElement("label");
+    labelCheckbox.for = "myCheckbox";
+    labelCheckbox.className = "checkbox-label";
+
+    // Criação do span do checkbox
+    var spanCheckbox = document.createElement("span");
+    spanCheckbox.className = "checkbox-icon";
+    
+    // Criação do texto do item
+    var itemText = document.createElement("label");
+    itemText.textContent = textInput.value;
+    
+    // Adiciona o checkbox e o texto ao novo item
+    newItem.appendChild(labelCheckbox);
+    //newItem.appendChild(checkbox);
+    newItem.appendChild(itemText);
+    
+    // Adiciona o novo item à lista
+    itemList.appendChild(newItem);
+    
+    textInput.value = ""; // Limpa o campo de entrada após adicionar o item
+  }
+
+
+  .checkbox-label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+}
+  
+.checkbox-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #aaa;
+    border-radius: 50%;
+    
+}
+  
+.checkbox-icon::before {
+    content: "X"; /* Código Unicode do ícone (exemplo: ícone de marcação) */
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    font-family: "Font Awesome"; /* Use a biblioteca de ícones desejada */
+    font-size: 14px;
+    color: #555;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+  
+input[type="checkbox"]:checked + .checkbox-label .checkbox-icon::before {
+    opacity: 1;
+}
+  
+input[type="checkbox"]:focus + .checkbox-label .checkbox-icon {
+    border-color: #007bff; /* Cor do foco do checkbox */
+}
