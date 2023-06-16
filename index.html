@@ -15,27 +15,29 @@
 
 </head>
 <body>
-    <h1 id="titulo">To-do list</h1>
-    
-    <div id="taskdiv">
-        <input type="text" id="textInput" placeholder="Digite a nova tarefa..." size="30" maxlength="50">
-        <button id="add-btn" onclick="addItemToList()">Adicionar</button>
-    </div>
+    <div id="div_macro">
+        <h1 id="titulo">To-do list</h1>
+
+        <div id="taskdiv">
+            <input type="text" id="textInput" placeholder=" Digite a nova tarefa..." size="40" maxlength="50">
+            <button id="add-btn" onclick="addItemToList()">Adicionar</button>
+        </div>
 
         <!-- Lista de tarefas -->
         <div id="checklist">
             <ul id="itemList" class="item-list">
-                <!-- <li>
+                <li>
                     <input type="checkbox" id="myCheckbox">
                     <label for="" id="tasktext">Creuza</label>
+                    <button id="close-btn" onclick="closeItem()">x</button>
                 </li>
                 <li>
                     <input type="checkbox" id="myCheckbox">
                     <label for="" id="tasktext">Neuza</label>
-                </li> -->
+                </li>
             </ul>
         </div>
         <!-- ------------------------ -->
-
+    </div>
 </body>
 </html>

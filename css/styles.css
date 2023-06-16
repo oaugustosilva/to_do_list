@@ -1,9 +1,9 @@
 * {
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    padding: 5px;
-    margin: 5px;
+    padding: 0px;
+    margin: 0px;
     box-sizing: border-box;
-    background-color: #f1ecd4;
+    background-color: #293544;
     color: #313131;
 }
 
@@ -18,8 +18,81 @@
     --circle: #565555;
 }
 
+h1 {
+    color: #ebebeb;
+}
+
+#div_macro {
+    display: column;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#taskdiv {
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+#checklist {
+    display: flex;
+    justify-content: center;
+}
+
+#itemList {
+    text-align: left;
+    border: 2px solid var(--border-color);
+    width: 500px;
+    height: 500px;
+    background-color: #f1ecd4;
+    border-radius: 5%;
+    margin-top: 5px;
+    padding-top: 15px;
+}
+
 #itemList li {
     list-style: none;
     padding: 5px;
-    /* Outros estilos personalizados */
+    margin-top: 0px;
+    margin-left: 20px;
+    background-color: #f1ecd4;
+    border-radius: 5%;
+    width: 400px;
+    display:flex;
+}
+
+#myCheckbox,
+#itemList li {
+    cursor: pointer;
+}
+
+#itemList label {
+    background-color: #f1ecd4;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+#textInput {
+    background-color: #ebebeb;
+    border-radius: 5px;
+}
+
+#add-btn {
+    background-color: #ebebeb;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#close-btn {
+    color: red;
+    background-color: #f1ecd4;
+    border: none;
+    margin-left: 300px;
+    cursor: pointer;
+}
+
+#close-btn:hover {
+    color: rgb(0, 0, 0);
+    background-color: #f1ecd4 ;
 }
