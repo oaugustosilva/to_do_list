@@ -4,7 +4,7 @@
     margin: 0px;
     box-sizing: border-box;
     background-color: #293544;
-    color: #313131;
+    color: #323232;
 }
 
 /* Variables */
@@ -60,8 +60,7 @@ h1 {
     display:flex;
 }
 
-#myCheckbox,
-#itemList li {
+#myCheckbox {
     cursor: pointer;
 }
 
@@ -84,7 +83,7 @@ h1 {
     text-align: center;
 }
 
-#close-btn {
+.deleteButton {
     color: red;
     background-color: #f1ecd4;
     border: none;
@@ -92,7 +91,7 @@ h1 {
     cursor: pointer;
 }
 
-#close-btn:hover {
+#deleteButton:hover {
     color: rgb(0, 0, 0);
     background-color: #f1ecd4 ;
 }

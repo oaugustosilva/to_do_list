@@ -1,4 +1,17 @@
 
+Etapas:
+
+1. Ok - Adicionar função para clicar na palavra e já marcar o checkbox;
+- Adicionar a tarefa com duas palavras a frase fica errada;
+2. Adicionar função de clicar no x e deletar a tarefa (Utilizar o ID do botão
+e fazer um switch case (?) para deletar a linha i - onde foi clicado para excluir);
+3. Não deixar adicionar texto vazio;
+3. Estilizar o checkbox;
+
+
+
+
+
 
 /*** custom checkboxes ***/
 @import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
